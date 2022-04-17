@@ -1,9 +1,10 @@
 <?php
 
-namespace Starter;
+namespace Geotargeting;
 
 
 use Exception;
+use Geotargeting\Modules\Geopositioning\GeopositioningModule;
 
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
@@ -60,6 +61,6 @@ final class App
      * @return void
      */
     public function addModules() {
-
+        new GeopositioningModule();
     }
 }

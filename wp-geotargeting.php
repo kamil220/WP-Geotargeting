@@ -1,6 +1,6 @@
 <?php
 
-namespace Starter;
+namespace Geotargeting;
 
 if ( !defined( 'ABSPATH' ) ) {
     exit;

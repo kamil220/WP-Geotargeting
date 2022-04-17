@@ -1,10 +1,10 @@
 <?php
 
-namespace Starter\Common\Modules;
+namespace Geotargeting\Common\Modules;
 
 /**
  * Class Module
- * @package Starter\Common\Modules
+ * @package Geotargeting\Common\Modules
  * @author Kamil Łazarz
  */
 abstract class Module
@@ -16,7 +16,8 @@ abstract class Module
      * Module constructor
      * @return void
      */
-    private function __construct() {
+    public function __construct() {
+        $this->services();
         add_action( 'wp_enqueue_scripts', [ $this, 'scripts' ], 100, 1 );
     }
 
@@ -27,6 +28,14 @@ abstract class Module
      * @return void
      */
     public function scripts() {
+
+    }
+
+    /**
+     * Load services
+     * @return void
+     */
+    private function services() {
 
     }
 }

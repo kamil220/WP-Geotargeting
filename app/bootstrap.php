@@ -1,6 +1,6 @@
 <?php
 
-namespace Starter;
+namespace Geotargeting;
 
 /**
  * Load Project classes with PSR-4 autoloader
@@ -9,7 +9,7 @@ try {
     spl_autoload_register( function ( $class )
     {
         $prefix = __NAMESPACE__ . '\\';
-        $base_dir = STARTER_PLUGIN_PATH . 'app/';
+        $base_dir = GEOTARGET_PLUGIN_PATH . 'app/';
 
         $len = strlen( $prefix );
 
